@@ -1,3 +1,4 @@
+import 'package:airbnb_clone/widgets/Input/search_input.dart';
 import 'package:flutter/material.dart';
 
 class FadeAppBar extends StatelessWidget {
@@ -18,7 +19,7 @@ class FadeAppBar extends StatelessWidget {
           horizontal: 24.0,
         ),
         color: Colors.white.withOpacity((scrollOffset / 350).clamp(0, 1).toDouble()),
-        child: SafeArea(child: Container()),
+        child: const SafeArea(child: SearchInput()),
       ),
     );
   }
